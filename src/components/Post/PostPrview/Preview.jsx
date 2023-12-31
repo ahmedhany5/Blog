@@ -49,7 +49,7 @@ async function loader({ params: { postId } }) {
   const post = await getPost(postId);
   const user = await getUser(post.userId);
 
-  return { comments: comments, post, user: user };
+  return {  comments, post, user };
 }
 
 export const preview = {
